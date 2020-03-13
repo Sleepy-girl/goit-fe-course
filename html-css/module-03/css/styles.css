@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.main-menu {
+    padding: 0;
+    margin: 0;
+}
+.main-menu-item {
+    display: inline-block;
+    padding: 0;
+}
+
+.main-menu-link {
+    font-family: "Playfair Display", "Times", serif;
+    font-weight: regular;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-menu-link:hover {
+    color: rgb(3, 169,244)
+}
+
+.main-nav li:not(:last-child) {
+margin-right: 122px; /* другие значения - все разные */
+}
+
+body {
+    font-family: "Playfair Display", "Times", serif;
+    font-weight: regular;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    line-height: 21px;
+}
+.articles {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+}
+.container {
+    width: 901px;
+    margin: 0 auto;
+ background-color: lightblue;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.font-ubuntu {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-weight: light;
+    color: rgb(180, 173, 158);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.lifestyle-title {
+    font-family: "Playfair Display", "Times", serif;
+    font-weight: regular;
+    color: rgb(98, 98, 98);
+    font-size: 30px;
+}
