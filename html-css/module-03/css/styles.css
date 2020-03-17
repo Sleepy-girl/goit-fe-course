@@ -14,15 +14,15 @@ html {
     display: inline-block;
     padding: 0;
 }
-/*  .main-nav li:not(:last-child) {
-margin-right: 122px; /* другие значения - все разные 
-} */
 .main-menu-link:hover,
 .main-menu-link:focus {
     color: rgb(3, 169,244)
 }
-.main-menu-link {
-    margin-left: 165px;
+.main-menu-item:first-of-type {
+    margin-right: 118px;
+}
+.main-menu-item:last-of-type {
+    margin-left: 91px;  
 }
 .main-menu-link {
     font-family: "Playfair Display", "Times", serif;
@@ -41,6 +41,7 @@ p {
 .font-ubuntu {
     font-weight: light;
     font-size: 14px;
+    line-height: 21px;
     font-family: "Ubuntu", "Arial", sans-serif;
     color: rgb(180, 173, 158);
     text-transform: uppercase;
