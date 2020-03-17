@@ -6,7 +6,6 @@ html {
 *::after {
     box-sizing: inherit;
 }
-
 .main-menu {
     padding: 0;
     margin: 0;
@@ -15,60 +14,61 @@ html {
     display: inline-block;
     padding: 0;
 }
-
+/*  .main-nav li:not(:last-child) {
+margin-right: 122px; /* другие значения - все разные 
+} */
+.main-menu-link:hover,
+.main-menu-link:focus {
+    color: rgb(3, 169,244)
+}
+.main-menu-link {
+    margin-left: 165px;
+}
 .main-menu-link {
     font-family: "Playfair Display", "Times", serif;
-    font-weight: regular;
     color: rgb(98, 98, 98);
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
 }
-
-.main-menu-link:hover {
-    color: rgb(3, 169,244)
-}
-
-.main-nav li:not(:last-child) {
-margin-right: 122px; /* другие значения - все разные */
-}
-
-body {
-    font-family: "Playfair Display", "Times", serif;
-    font-weight: regular;
-    color: rgb(98, 98, 98);
-    font-size: 14px;
+p {
+    font-family: "PlayfairDisplay", "Times", serif;
     line-height: 21px;
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+}
+.font-ubuntu {
+    font-weight: light;
+    font-size: 14px;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+.lifestyle-title, .photodiary-title {
+    font-family: "PlayfairDisplay", "Times", serif;
+    color: rgb(98, 98, 98);
+    font-size: 30px;    
 }
 .articles {
+    list-style: none;
     padding: 0;
     margin: 0;
-    list-style: none;
-    font-size: 14px;
 }
 .container {
-    width: 901px;
+    width: 900px;
     margin: 0 auto;
  background-color: lightblue;
 }
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
-.font-ubuntu {
-    font-family: "Ubuntu", "Arial", sans-serif;
-    font-weight: light;
-    color: rgb(180, 173, 158);
-    font-size: 14px;
-    text-transform: uppercase;
+.musicfest, .coffee, .americandream, .theAlps {
+    width: 420px;
+    display: inline-block;
 }
-
-.lifestyle-title {
-    font-family: "Playfair Display", "Times", serif;
-    font-weight: regular;
-    color: rgb(98, 98, 98);
-    font-size: 30px;
+.musicfest, .coffee, .americandream, .theAlps:nth-of-type(2n+1) {
+    margin-right: 56px;
 }
