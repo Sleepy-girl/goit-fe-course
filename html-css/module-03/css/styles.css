@@ -18,11 +18,8 @@ html {
 .main-menu-link:focus {
     color: rgb(3, 169,244)
 }
-.main-menu-item:first-of-type {
-    margin-right: 118px;
-}
-.main-menu-item:last-of-type {
-    margin-left: 91px;  
+.main-menu-item:not(:last-child){
+    margin-right: 60px;
 }
 .main-menu-link {
     font-family: "Playfair Display", "Times", serif;
@@ -72,4 +69,18 @@ img {
 }
 .musicfest, .coffee, .americandream, .theAlps:nth-of-type(2n+1) {
     margin-right: 56px;
+}
+/* button */
+.load-more {
+    font-size: 20px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98); 
+}
+.box {
+    width: 164px;
+    height: 60px;
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0); 
 }
