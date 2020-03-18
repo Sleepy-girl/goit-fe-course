@@ -10,13 +10,6 @@ html {
     padding: 0;
     margin: 0;
 }
-/*.container-nav {
-    width: 900px;
-    height: 66px;
-    margin: 0 auto;
-    text-align: center;
-   background-color: pink;
-} */
 .main-menu-item {
     display: inline-block;
     padding: 0;
@@ -33,6 +26,7 @@ html {
     font-family: "Playfair Display", "Times", serif;
     color: rgb(98, 98, 98);
     font-size: 14px;
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -40,18 +34,18 @@ html {
     text-align: center;
 }
 p {
-    font-family: "PlayfairDisplay", "Times", serif;
+    font-family: 'PlayfairDisplay', "Times", serif;
     line-height: 21px;
     font-size: 14px;
-    font-family: "PlayfairDisplay";
+    font-weight: 400;
     color: rgb(98, 98, 98);
     margin-top: 6px;
     margin-bottom: 6px;
 }
 .font-ubuntu {
-    font-weight: light;
     font-size: 14px;
     line-height: 21px;
+    font-weight: 300;
     font-family: "Ubuntu", "Arial", sans-serif;
     color: rgb(180, 173, 158);
     text-transform: uppercase;
@@ -61,7 +55,8 @@ p {
 .lifestyle-title {
     font-family: "PlayfairDisplay", "Times", serif;
     color: rgb(98, 98, 98);
-    font-size: 30px;    
+    font-size: 30px;
+    font-weight: 400;    
 }
 .articles {
     list-style: none;
