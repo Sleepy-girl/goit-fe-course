@@ -10,16 +10,24 @@ html {
     padding: 0;
     margin: 0;
 }
+/*.container-nav {
+    width: 900px;
+    height: 66px;
+    margin: 0 auto;
+    text-align: center;
+   background-color: pink;
+} */
 .main-menu-item {
     display: inline-block;
     padding: 0;
+    margin-top: 66px;
 }
 .main-menu-link:hover,
 .main-menu-link:focus {
     color: rgb(3, 169,244)
 }
 .main-menu-item:not(:last-child){
-    margin-right: 60px;
+    margin-right: 100px;
 }
 .main-menu-link {
     font-family: "Playfair Display", "Times", serif;
@@ -28,12 +36,17 @@ html {
     text-transform: uppercase;
     text-decoration: none;
 }
+.main-nav {
+    text-align: center;
+}
 p {
     font-family: "PlayfairDisplay", "Times", serif;
     line-height: 21px;
     font-size: 14px;
     font-family: "PlayfairDisplay";
     color: rgb(98, 98, 98);
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 .font-ubuntu {
     font-weight: light;
@@ -42,6 +55,8 @@ p {
     font-family: "Ubuntu", "Arial", sans-serif;
     color: rgb(180, 173, 158);
     text-transform: uppercase;
+    margin-top: 28px;
+    margin-bottom: 21px;
 }
 .lifestyle-title, .photodiary-title {
     font-family: "PlayfairDisplay", "Times", serif;
@@ -52,23 +67,25 @@ p {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 0;
 }
 .container {
     width: 900px;
     margin: 0 auto;
- background-color: lightblue;
+   /* background-color: lightblue; */
 }
 img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-top: 125px;
 }
 .musicfest, .coffee, .americandream, .theAlps {
     width: 420px;
     display: inline-block;
 }
 .musicfest, .coffee, .americandream, .theAlps:nth-of-type(2n+1) {
-    margin-right: 56px;
+    margin-right: 60px;
 }
 /* button */
 .load-more {
@@ -77,6 +94,8 @@ img {
     color: rgb(98, 98, 98); 
 }
 .box {
+    margin-top: 46px;
+    margin-left: 368px;
     width: 164px;
     height: 60px;
     border-width: 1px;
