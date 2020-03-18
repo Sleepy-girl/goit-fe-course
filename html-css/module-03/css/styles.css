@@ -81,20 +81,22 @@ img {
 .lifestyle:nth-of-type(2n+1) {
     margin-right: 60px;
 }
-/* button */
-.load-more {
+.lifestyle:nth-last-child(-n+2) {
+    margin-bottom: 46px;
+}
+
+.loadmore-button {
     font-size: 20px;
+    line-height: 30px;
     font-family: "PlayfairDisplay";
     color: rgb(98, 98, 98); 
     font-weight: 400;
-}
-.box {
-    margin-top: 46px;
-    margin-left: 368px;
-    width: 164px;
+    margin: 0 368px;
+    min-width: 164px;
     height: 60px;
     border-width: 1px;
     border-color: rgb(98, 98, 98);
     border-style: solid;
     background-color: rgba(255, 255, 255, 0); 
+    cursor: pointer;
 }
