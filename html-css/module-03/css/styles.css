@@ -23,7 +23,7 @@ html {
     margin-right: 100px;
 }
 .main-menu-link {
-    font-family: "Playfair Display", "Times", serif;
+    font-family: "PlayfairDisplay", "Times", serif;
     color: rgb(98, 98, 98);
     font-size: 14px;
     font-weight: 400;
@@ -39,8 +39,7 @@ p {
     font-size: 14px;
     font-weight: 400;
     color: rgb(98, 98, 98);
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
 }
 .font-ubuntu {
     font-size: 14px;
@@ -49,7 +48,6 @@ p {
     font-family: "Ubuntu", "Arial", sans-serif;
     color: rgb(180, 173, 158);
     text-transform: uppercase;
-    margin-top: 28px;
     margin-bottom: 21px;
 }
 .lifestyle-title {
@@ -74,6 +72,7 @@ img {
     max-width: 100%;
     height: auto;
     margin-top: 125px;
+    margin-bottom: 28px;
 }
 .lifestyle {
     width: 420px;
@@ -87,6 +86,7 @@ img {
     font-size: 20px;
     font-family: "PlayfairDisplay";
     color: rgb(98, 98, 98); 
+    font-weight: 400;
 }
 .box {
     margin-top: 46px;
