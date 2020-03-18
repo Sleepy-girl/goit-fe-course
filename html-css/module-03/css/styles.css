@@ -13,7 +13,11 @@ html {
 .main-menu-item {
     display: inline-block;
     padding: 0;
-    margin-top: 66px;
+    margin: 0;
+}
+.main-header {
+    padding-top: 76px;
+    padding-bottom: 102px;
 }
 .main-menu-link:hover,
 .main-menu-link:focus {
@@ -29,6 +33,9 @@ html {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
+}
+.main-menu-link {
+    display: block;
 }
 .main-nav {
     text-align: center;
@@ -65,14 +72,14 @@ p {
 .container {
     width: 900px;
     margin: 0 auto;
-/*  background-color: lightblue; */
+  background-color: lightblue; 
 }
 img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin-top: 125px;
-    margin-bottom: 28px;
+    margin: 0;
+    padding: 0;
 }
 .lifestyle {
     width: 420px;
@@ -84,19 +91,24 @@ img {
 .lifestyle:nth-last-child(-n+2) {
     margin-bottom: 46px;
 }
-
+.loadmore-button:hover,
+.loadmore-button:focus {
+    background-color: rgb(98, 98, 98);
+    color: white;
+}
 .loadmore-button {
-    font-size: 20px;
-    line-height: 30px;
-    font-family: "PlayfairDisplay";
-    color: rgb(98, 98, 98); 
-    font-weight: 400;
-    margin: 0 368px;
+    display: block;
+    margin: 0 auto;
     min-width: 164px;
     height: 60px;
     border-width: 1px;
     border-color: rgb(98, 98, 98);
     border-style: solid;
-    background-color: rgba(255, 255, 255, 0); 
+    background-color: rgba(255, 255, 255, 0);     
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98); 
+    font-weight: 400;
     cursor: pointer;
 }
