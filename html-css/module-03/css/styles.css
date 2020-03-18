@@ -58,7 +58,7 @@ p {
     margin-top: 28px;
     margin-bottom: 21px;
 }
-.lifestyle-title, .photodiary-title {
+.lifestyle-title {
     font-family: "PlayfairDisplay", "Times", serif;
     color: rgb(98, 98, 98);
     font-size: 30px;    
@@ -72,7 +72,7 @@ p {
 .container {
     width: 900px;
     margin: 0 auto;
-   /* background-color: lightblue; */
+   background-color: lightblue; 
 }
 img {
     display: block;
@@ -80,11 +80,11 @@ img {
     height: auto;
     margin-top: 125px;
 }
-.musicfest, .coffee, .americandream, .theAlps {
+.lifestyle {
     width: 420px;
     display: inline-block;
 }
-.musicfest, .coffee, .americandream, .theAlps:nth-of-type(2n+1) {
+.lifestyle:nth-of-type(2n+1) {
     margin-right: 60px;
 }
 /* button */
