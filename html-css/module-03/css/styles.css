@@ -93,8 +93,9 @@ img {
 }
 .loadmore-button:hover,
 .loadmore-button:focus {
-    background-color: rgb(98, 98, 98);
-    color: white;
+    background-color: rgba(98, 98, 98, 0.05);
+    color: rgb(3, 169,244);
+    border-color: rgb(3, 169,244);
 }
 .loadmore-button {
     display: block;
