@@ -30,6 +30,7 @@ html {
     font-family: "PlayfairDisplay", "Times", serif;
     color: rgb(98, 98, 98);
     font-size: 14px;
+    line-height: 21px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
@@ -40,28 +41,21 @@ html {
 .main-nav {
     text-align: center;
 }
-p {
-    font-family: 'PlayfairDisplay', "Times", serif;
-    line-height: 21px;
-    font-size: 14px;
-    font-weight: 400;
-    color: rgb(98, 98, 98);
-    margin-bottom: 12px;
+.container {
+    width: 900px;
+    margin: 0 auto;
+ /* background-color: lightblue;*/ 
 }
-.font-ubuntu {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 300;
-    font-family: "Ubuntu", "Arial", sans-serif;
-    color: rgb(180, 173, 158);
-    text-transform: uppercase;
-    margin-bottom: 21px;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 30px 0;
+    padding: 0;
 }
-.lifestyle-title {
-    font-family: "PlayfairDisplay", "Times", serif;
-    color: rgb(98, 98, 98);
-    font-size: 30px;
-    font-weight: 400;    
+.lifestyle {
+    width: 420px;
+    display: inline-block;
 }
 .articles {
     list-style: none;
@@ -69,21 +63,35 @@ p {
     margin: 0;
     font-size: 0;
 }
-.container {
-    width: 900px;
-    margin: 0 auto;
-  /*background-color: lightblue;*/ 
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+p h2 {
     margin: 0;
     padding: 0;
+    font-size: 0;
 }
-.lifestyle {
-    width: 420px;
-    display: inline-block;
+.text {
+    font-family: 'Playfair Display', "Times", serif;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 134px;
+}
+.font-ubuntu {
+    font-family: "Ubuntu", "Arial", sans-serif;
+    color: rgb(180, 173, 158);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.lifestyle-title {
+    font-family: "PlayfairDisplay", "Times", serif;
+    color: rgb(98, 98, 98);
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 400;
+    margin-bottom: 32px;    
 }
 .lifestyle:nth-of-type(2n+1) {
     margin-right: 60px;
