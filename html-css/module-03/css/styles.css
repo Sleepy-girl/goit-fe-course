@@ -56,6 +56,7 @@ img {
 .lifestyle {
     width: 420px;
     display: inline-block;
+    margin-bottom: 134px;
 }
 .articles {
     list-style: none;
@@ -74,7 +75,6 @@ p h2 {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    margin-bottom: 134px;
 }
 .font-ubuntu {
     font-family: "Ubuntu", "Arial", sans-serif;
@@ -97,7 +97,7 @@ p h2 {
     margin-right: 60px;
 }
 .lifestyle:nth-last-child(-n+2) {
-    margin-bottom: 46px;
+    margin-bottom: 0;
 }
 .loadmore-button:hover,
 .loadmore-button:focus {
@@ -114,10 +114,13 @@ p h2 {
     border-color: rgb(98, 98, 98);
     border-style: solid;
     background-color: rgba(255, 255, 255, 0);     
-    font-size: 20px;
-    line-height: 30px;
     font-family: "PlayfairDisplay";
-    color: rgb(98, 98, 98); 
+    color: rgb(98, 98, 98);
+    font-size: 20px;
+    line-height: 30px; 
     font-weight: 400;
     cursor: pointer;
+}
+.content {
+    padding-bottom: 70px;
 }
