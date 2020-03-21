@@ -84,6 +84,7 @@ p, h2 {
     line-height: 21px;
     font-weight: 300;
     text-transform: uppercase;
+    margin: 0;
     margin-bottom: 22px;
 }
 .lifestyle-title {
@@ -92,6 +93,7 @@ p, h2 {
     font-size: 30px;
     line-height: 45px;
     font-weight: 400;
+    margin: 0;
     margin-bottom: 32px;    
 }
 .lifestyle:nth-of-type(2n+1) {
