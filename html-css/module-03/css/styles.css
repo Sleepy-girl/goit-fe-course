@@ -98,8 +98,12 @@ p h2 {
     margin-right: 60px;
 }
 .lifestyle:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+.articles {
     margin-bottom: 46px;
 }
+
 .loadmore-button:hover,
 .loadmore-button:focus {
     background-color: rgba(98, 98, 98, 0.05);
