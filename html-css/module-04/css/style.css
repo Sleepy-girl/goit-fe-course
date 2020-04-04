@@ -6,52 +6,10 @@ html {
 *::after {
     box-sizing: inherit;
 }
-.main-nav {
-    margin: 0;
-    padding: 0;
-}
-.site-nav {
-    margin: 0;
-    padding: 0;
-}
-.site-nav-item {
-    display: inline-block;
-}
-.site-nav-item:not(:last-child){
-    margin-right: 34px;
-}
-.site-logo-link {
-    display: inline-block;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 45px;
-    color: rgb(85, 82, 82);
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.site-logo-link::first-letter {
-    font-weight: 900;
-    color: rgb(26, 188, 156);
-}
-.site-nav-link {
-    display: inline-block;
-    font-family: "OpenSans", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    color: rgb(85, 82, 82);
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.site-nav-link:hover,
-.site-nav-link:focus {
-    color: rgb(26, 188, 156);
-}
 .container {
     width: 1110px;
     margin: 0 auto;
- background-color: lightpink; 
+    background-color: lightpink; 
 }
 img {
     display: block;
@@ -60,11 +18,75 @@ img {
     margin: 0;
     padding: 0;
 }
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+.main-nav {
+    padding-top: 35px;
+    margin: 0;
+    margin-bottom: 104px;
+    background-color: #fffabb;
+}
+.site-logo {
+    font-size: 0;
+}
+.site-logo-link {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgb(85, 82, 82);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-logo-link::first-letter {
+    font-weight: 900;
+    color: rgb(26, 188, 156);
+}
+.site-nav {
+    display: inline-block;
+    float: right;
+    width: 526px; /* по макету 465px */
+    background-color: tomato;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li {
+    display: inline-block;
+}
+.site-nav li:not(:last-child){
+    margin-right: 33px;
+}
+.site-nav a {
+    display: inline-block;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(85, 82, 82);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: rgb(26, 188, 156);
+}
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 48px;
-    line-height: 72px;
+    line-height: 58px;
     color: rgb(81, 81, 81);
     text-transform: uppercase;
     text-align: center;
@@ -80,10 +102,11 @@ h2:after {
 .shop-list {
     margin: 0;
     padding: 0;
-    font-size: 0;
+    /*font-size: 0;*/
+    list-style: none;
 }
-.shop-list-item {
-    display: inline-block;
+.shop-list li {
+    /*display: inline-block;*/
     width: 255px;
 }
 .shop-list-item:not(:nth-child(4n)) {
@@ -94,31 +117,32 @@ h2:after {
 }
 
 h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 900;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 22px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;   
 }
-/*.shop-list li:nth-child(-2n+4) {
-    margin-right: 0;
-}*/
 .product {
     float: left;
+    margin: 0;
+    padding: 0;
 }
 .price {
     float: right;
+    margin: 0;
+    padding: 0;
 }
-
 
 .news-list {
     margin: 0;
     padding: 0;
-    font-size: 0;
+    /*font-size: 0;*/
+    list-style: none;
 }
 .news-list-item {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 350px;
     margin-right: 30px;
 }
@@ -129,7 +153,7 @@ h4 {
     font-family: "OpenSans", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 22px;
     color: rgb(85, 82, 82);
 }
 h4::after {
@@ -143,18 +167,18 @@ p {
     font-family: "OpenSans", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 17px;
     color: rgb(85, 82, 82);
 }
 button {
     width: 160px;
     height: 50px;
     border: none;
-    font-size: 16px;
     font-family: "OpenSans", sans-serif;
     font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
     color: rgb(255, 255, 255);
-    line-height: 24px;
     text-align: center;
     background: rgb(26, 188, 156);   
     }
