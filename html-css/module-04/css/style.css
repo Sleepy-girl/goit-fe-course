@@ -9,7 +9,7 @@ html {
 .container {
     width: 1110px;
     margin: 0 auto;
-    background-color: lightpink; 
+    background-color: lightpink;
 }
 img {
     display: block;
@@ -100,6 +100,8 @@ h2:after {
     height: 7px;
     background-color:rgb(26, 188, 156);
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 92px;
 }
 .shop-list {
     margin: 0;
@@ -159,6 +161,9 @@ h3 {
 .news-list-item:last-child {
     margin-right: 0;
 }
+.news-list-item img {
+    margin-bottom: 16px;
+}
 h4 {
     font-family: "OpenSans", sans-serif;
     font-weight: 600;
@@ -169,6 +174,8 @@ h4 {
 h4::after {
     display: block;
     content: '';
+    margin-top: 13px;
+    margin-bottom: 30px;
     width: 136px;
     height: 3px;
     background-color: rgb(26, 188, 156);
@@ -179,6 +186,7 @@ p {
     font-size: 14px;
     line-height: 17px;
     color: rgb(85, 82, 82);
+    margin-bottom: 18px;
 }
 button {
     width: 160px;
@@ -190,5 +198,6 @@ button {
     line-height: 19px;
     color: rgb(255, 255, 255);
     text-align: center;
-    background: rgb(26, 188, 156);   
+    background: rgb(26, 188, 156);
+    margin-bottom: 46px;   
     }
