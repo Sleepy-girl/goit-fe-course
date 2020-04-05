@@ -34,6 +34,7 @@ h1, h2, h3, h4, p {
     background-color: #fffabb;
 }
 .site-logo {
+    float: left;
     font-size: 0;
 }
 .site-logo-link {
@@ -63,6 +64,7 @@ h1, h2, h3, h4, p {
 }
 .site-nav li {
     display: inline-block;
+    margin-top: 12px;
 }
 .site-nav li:not(:last-child){
     margin-right: 33px;
@@ -107,6 +109,7 @@ h2:after {
 }
 .shop-list li {
     /*display: inline-block;*/
+    float: left;
     width: 255px;
 }
 .shop-list-item:not(:nth-child(4n)) {
@@ -122,17 +125,23 @@ h3 {
     font-size: 18px;
     line-height: 22px;
     color: rgb(255, 255, 255);
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
 .product {
     float: left;
     margin: 0;
     padding: 0;
+    background-color: rgb(50, 50, 50);
+    height: 40px;
+    width: 255px;
 }
 .price {
     float: right;
     margin: 0;
     padding: 0;
+    background-color: rgba(140, 140, 140, 0.44);
+    height: 40px;
+    width: 54px;
 }
 
 .news-list {
