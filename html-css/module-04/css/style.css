@@ -9,7 +9,7 @@ html {
 .container {
     width: 1110px;
     margin: 0 auto;
-    background-color: lightpink;
+    /*background-color: lightpink;*/
 }
 img {
     display: block;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, p, span {
     padding-top: 35px;
     margin: 0;
     margin-bottom: 104px;
-    background-color: #fffabb;
+    /* background-color: #fffabb; */
 }
 .site-logo {
     float: left;
@@ -57,7 +57,7 @@ h1, h2, h3, h4, p, span {
     display: inline-block;
     float: right;
     width: 526px; /* по макету 465px */
-    background-color: tomato;
+    /* background-color: tomato;*/
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -206,3 +206,7 @@ button {
     background: rgb(26, 188, 156);
     margin-bottom: 46px;   
     }
+.read-more:hover {
+    background-color: rgba(26, 188, 156, 0.7);
+    cursor: pointer;
+}
