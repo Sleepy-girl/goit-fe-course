@@ -9,7 +9,7 @@ html {
 .container {
     width: 1110px;
     margin: 0 auto;
-    /*background-color: lightpink;*/
+    background-color: lightpink;*/
 }
 img {
     display: block;
@@ -30,8 +30,8 @@ h1, h2, h3, h4, p, span {
 .main-nav {
     padding-top: 35px;
     margin: 0;
-    margin-bottom: 104px;
-    /* background-color: #fffabb; */
+    padding-bottom: 104px;
+    background-color: #fffabb; */
 }
 .site-logo {
     float: left;
@@ -57,7 +57,6 @@ h1, h2, h3, h4, p, span {
     display: inline-block;
     float: right;
     width: 526px; /* по макету 465px */
-    /* background-color: tomato;*/
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -133,8 +132,8 @@ h3, span {
 }
 .substrate {
     background-color: rgb(50, 50, 50);
-    height: 40px;
-    width: 255px; 
+    /*height: 40px;
+    width: 255px; */
 }
 .product {
     float: left;
@@ -143,9 +142,9 @@ h3, span {
 .price {
     float: right;
     background-color: rgba(255, 255, 255, 0.44);
-    height: 40px;
+    line-height: 30px;
     width: 54px;
-    padding-left: 12px;
+    /*padding-left: 12px;*/
 }
 
 .news-title {
@@ -193,20 +192,27 @@ p {
     color: rgb(85, 82, 82);
     margin-bottom: 18px;
 }
-button {
+.more {
     width: 160px;
     height: 50px;
-    border: none;
+    border-radius: 3px;
+    background-color: rgb(78, 198, 171);
+    margin-bottom: 46px;  
+}
+.more:hover {
+    background-color: rgba(26, 188, 156, 0.7);
+}
+.read-more {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 42px;
+    padding-top: 16px;
     font-family: "OpenSans", sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     color: rgb(255, 255, 255);
-    text-align: center;
-    background: rgb(26, 188, 156);
-    margin-bottom: 46px;   
-    }
-.read-more:hover {
-    background-color: rgba(26, 188, 156, 0.7);
-    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
 }
