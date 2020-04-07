@@ -9,7 +9,7 @@ html {
 .container {
     width: 1110px;
     margin: 0 auto;
-    background-color: lightpink;*/
+    /*background-color: lightpink;*/
 }
 img {
     display: block;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, p, span {
     padding-top: 35px;
     margin: 0;
     padding-bottom: 104px;
-    background-color: #fffabb; */
+   /* background-color: #fffabb; */
 }
 .site-logo {
     float: left;
