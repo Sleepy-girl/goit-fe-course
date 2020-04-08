@@ -9,7 +9,6 @@ html {
 .container {
     width: 1110px;
     margin: 0 auto;
-    /*background-color: lightpink;*/
 }
 img {
     display: block;
@@ -31,7 +30,6 @@ h1, h2, h3, h4, p, span {
     padding-top: 35px;
     margin: 0;
     padding-bottom: 104px;
-   /* background-color: #fffabb; */
 }
 .site-logo {
     float: left;
@@ -125,15 +123,19 @@ h3, span {
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 900;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 40px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    padding-top: 9px;
 }
 .substrate {
     background-color: rgb(50, 50, 50);
-    /*height: 40px;
-    width: 255px; */
+}
+.substrate:hover,
+.substrate:focus {
+    background-color: rgb(26, 188, 156);    
+}
+.cardofproduct:hover ~ .substrate {
+    background-color: rgb(26, 188, 156);
 }
 .product {
     float: left;
@@ -142,9 +144,8 @@ h3, span {
 .price {
     float: right;
     background-color: rgba(255, 255, 255, 0.44);
-    line-height: 30px;
     width: 54px;
-    /*padding-left: 12px;*/
+    text-align: center;
 }
 
 .news-title {
@@ -199,7 +200,8 @@ p {
     background-color: rgb(78, 198, 171);
     margin-bottom: 46px;  
 }
-.more:hover {
+.more:hover,
+.more:focus {
     background-color: rgba(26, 188, 156, 0.7);
 }
 .read-more {
