@@ -27,9 +27,9 @@ h1, h2, h3, h4, p, span {
     padding: 0;
 }
 .main-nav {
-    padding-top: 35px;
+    padding-top: 30px;
     margin: 0;
-    padding-bottom: 104px;
+    padding-bottom: 94px;
 }
 .site-logo {
     float: left;
@@ -43,6 +43,7 @@ h1, h2, h3, h4, p, span {
     font-weight: 300;
     font-size: 30px;
     line-height: 36px;
+    letter-spacing: -0.02em;
     color: rgb(85, 82, 82);
     text-transform: uppercase;
     text-decoration: none;
@@ -54,14 +55,14 @@ h1, h2, h3, h4, p, span {
 .site-nav {
     display: inline-block;
     float: right;
-    width: 526px; /* по макету 465px */
+    width: 516px; /* по макету 465px */
     margin: 0 auto;
     padding: 0;
     list-style: none;
 }
 .site-nav li {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 14px;
 }
 .site-nav li:not(:last-child){
     margin-right: 33px;
@@ -72,6 +73,7 @@ h1, h2, h3, h4, p, span {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+    letter-spacing: -0.02em;
     color: rgb(85, 82, 82);
     text-transform: uppercase;
     text-decoration: none;
@@ -86,6 +88,7 @@ h2 {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
+    letter-spacing: -0.02em;
     color: rgb(81, 81, 81);
     text-transform: uppercase;
     text-align: center;
@@ -97,7 +100,7 @@ h2:after {
     height: 7px;
     background-color:rgb(26, 188, 156);
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 92px;
 }
 .shop-list {
@@ -118,12 +121,12 @@ h2:after {
 .shop-list-item:nth-last-child(-n+4) {
     margin-bottom: 0;
 }
-
 h3, span {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 18px;
     line-height: 40px;
+    letter-spacing: -0.02em;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
@@ -134,7 +137,7 @@ h3, span {
 .substrate:focus {
     background-color: rgb(26, 188, 156);    
 }
-.cardofproduct:hover ~ .substrate {
+.shop-list-item:hover .substrate {
     background-color: rgb(26, 188, 156);
 }
 .product {
@@ -149,7 +152,7 @@ h3, span {
 }
 
 .news-title {
-    padding-top: 100px;
+    padding-top: 94px;
 }
 .news-list {
     margin: 0;
@@ -167,20 +170,21 @@ h3, span {
     margin-right: 0;
 }
 .news-list-item img {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 h4 {
     font-family: "OpenSans", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
     color: rgb(85, 82, 82);
 }
 h4::after {
     display: block;
     content: '';
-    margin-top: 13px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 26px;
     width: 136px;
     height: 3px;
     background-color: rgb(26, 188, 156);
@@ -189,9 +193,10 @@ p {
     font-family: "OpenSans", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
     color: rgb(85, 82, 82);
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 .more {
     width: 160px;
@@ -214,6 +219,7 @@ p {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
+    letter-spacing: -0.02em;
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: capitalize;
