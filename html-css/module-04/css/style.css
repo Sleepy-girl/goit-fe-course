@@ -65,7 +65,7 @@ h1, h2, h3, h4, p, span {
     margin-top: 14px;
 }
 .site-nav li:not(:last-child){
-    margin-right: 33px;
+    margin-right: 30px;
 }
 .site-nav a {
     display: inline-block;
@@ -74,7 +74,7 @@ h1, h2, h3, h4, p, span {
     font-size: 14px;
     line-height: 17px;
     letter-spacing: -0.02em;
-    color: rgb(85, 82, 82);
+    color: rgb(15, 1, 1);
     text-transform: uppercase;
     text-decoration: none;
 }
