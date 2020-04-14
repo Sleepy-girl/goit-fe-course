@@ -36,7 +36,7 @@ img {
 .container {
     width: 1110px;
     margin: 0 auto;
-    /*background-color: lightgray*/
+    background-color: lightskyblue;
 }
 
 .main-nav {
