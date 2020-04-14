@@ -228,7 +228,7 @@ h4, span {
 }
 .buttons-of-card {
     position: absolute;
-    background-color: #rgba(0, 0, 2, 0.52);
+    background-color: rgba(0, 0, 2, 0.52);
     top: 10px;
     right: 10px;
     bottom: 10px;
