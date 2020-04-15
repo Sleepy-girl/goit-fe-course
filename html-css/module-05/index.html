@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTS-8">
+        <meta charset="UTF-8">
         <title>Vygovska-Module-05</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,900&display=swap" rel="stylesheet">
@@ -38,19 +38,23 @@
             </div>
         </header>
         <div class="slider">
-            <div class="container">
-                <button class="slider-ctrl slider-ctrl-prev"></button>
-                <button class="slider-ctrl slider-ctrl-next"></button>
-            </div>
             <ul class="slides">
                 <li class="slides-item">
-                    <img class="slides-image" src="images/banner.jpg" alt="happy ladies">
-                    <h2 class="slides-descr container">Affordable Paris Tours</h2>
-                    <span class="slides-descr container">City tours / Tour tickets / Tour guides</span>
+                    <img class="slides-image" src="images/banner.jpg" alt="happy ladies" height="600">
+                    <div class="overlay-slider"></div>
                 </li>
             </ul>
+            <div class="container_slider">
+                <button class="slider-ctrl slider-ctrl-prev"></button>
+                <button class="slider-ctrl slider-ctrl-next"></button>
+                <div class="container_slides-descr">
+                    <h2 class="tours">Affordable Paris Tours</h2>
+                    <span class="details-of-tour">City tours / Tour tickets / Tour guides</span>
+                </div>
+            </div>
         </div>
         <main>
+            <div class="bgc">
             <div class="container">
                 <section class="shop">
                     <h3 class="shop-title">new collection</h3>
@@ -63,7 +67,7 @@
                                         <button class="card like"></button>
                                         <button class="card compare"></button>
                                         <button class="card reserve"></button>
-                                        <button class="card cart"></button>
+                                        <button class="card cart">add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +86,7 @@
                                         <button class="card like"></button>
                                         <button class="card compare"></button>
                                         <button class="card reserve"></button>
-                                        <button class="card cart"></button>
+                                        <button class="card cart">add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +105,7 @@
                                         <button class="card like"></button>
                                         <button class="card compare"></button>
                                         <button class="card reserve"></button>
-                                        <button class="card cart"></button>
+                                        <button class="card cart">add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +124,7 @@
                                         <button class="card like"></button>
                                         <button class="card compare"></button>
                                         <button class="card reserve"></button>
-                                        <button class="card cart"></button>
+                                        <button class="card cart">add to cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -134,9 +138,13 @@
                     </ul>
                 </section>
             </div>
+        </div>
         </main>
         <footer>
-            <span>Rights Reserved © Dokan | Designed ThemenGraph</span>
+            <div class="footer">
+                <p class="rights">Rights Reserved © Dokan | Designed</p>
+                <span class="designed">ThemenGraph</span>
+            </div>
         </footer>
     </body>
 </html>
