@@ -215,7 +215,7 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 48px;
-    line-height: 1.2px;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     color: rgb(81, 81, 81);
     text-transform: uppercase;
