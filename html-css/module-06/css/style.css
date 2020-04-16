@@ -42,6 +42,12 @@ img {
 
 .main-nav {
     display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+}
+
+h1 {
+    margin: 0;
 }
 
 .logotype_link {
@@ -50,11 +56,13 @@ img {
     color: var(--main-color);
     font-weight: 700;
     text-transform: initial;
-    line-height: 36px;
+    /* line-height: 36px; */
 }
 
 .nav-list {
     display: flex;
+    width: 490px;
+    justify-content: space-between;
 }
 
 .nav-list-item-link {
@@ -66,11 +74,9 @@ img {
     line-height: 17px;
 }
 
-.nav-list-item:hover,
-.nav-list-item:focus {
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
     color: var(--pink);
-    /* text-decoration: underline; */
-    padding-bottom: 10px;
 }
 
 .before-section-title {
@@ -81,14 +87,14 @@ img {
     line-height: 29px;
   }
   
-  .section-title {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
-    text-transform: uppercase;
-    line-height: 36px;
-  }
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 36px;
+}
 
 h3 {
     font-size: 14px;
@@ -107,10 +113,19 @@ h3 {
     line-height: 18px;
 }
   
-.service-item {
-    display: inline-block;
+.service-list, 
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-list-item, 
+.team-list-item {
     width: 380px; /*300px;*/
 }
+
+
 
 .positions {
     font-size: 15px;
@@ -132,7 +147,7 @@ h3 {
 }
   
 .team-list-item {
-    display: inline-block;
+    display: flex;
     width: 380px;
 }
 
