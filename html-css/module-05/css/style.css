@@ -37,8 +37,7 @@ img {
 
 .main-nav {
     margin: 0;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding: 34px 0;
 }
 
 .site-logo {
@@ -106,7 +105,8 @@ img {
     background-color: rgba(0, 0, 2, 0.56);
 }
 
-.overlay-slider {
+.overlay-slider::before {
+    content: "";
     position: absolute;
     top: 0px;
     right: 0px;
@@ -187,8 +187,7 @@ h2 {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: left;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .details-of-tour {
@@ -202,13 +201,12 @@ h2 {
     margin: 0;
 }
 
-.bgc {
+.shop-wraper {
     background-color: rgb(233, 240, 253);
 }
 
 .shop {
-    padding-top: 98px;
-    padding-bottom: 98px;
+    padding: 98px 0;
 }
 
 h3 {
@@ -229,9 +227,7 @@ h3:after {
     width: 164px;
     height: 7px;
     background-color:rgb(26, 188, 156);
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 92px;
+    margin: 20px auto 92px;
 }
 
 .shop-list {
@@ -333,8 +329,7 @@ h4, span {
 }
 
 .card:nth-child(-n+2) {
-    margin-right: 6px;
-    margin-bottom: 6px;
+    margin: 0 6px 6px 0;
 }
 
 .card:nth-last-child(1) {
@@ -385,8 +380,7 @@ h4, span {
     letter-spacing: -0.02em;
     font-family: "OpenSans", sans-serif;
     color: rgb(254, 254, 254);
-    padding: 0;
-    padding-right: 2px;
+    padding: 0 2px 0 0;
     margin: 0;
 }
 
