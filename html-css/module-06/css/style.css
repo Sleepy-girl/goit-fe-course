@@ -3,7 +3,7 @@
     --yellow: rgb(252, 227, 138);
     /* --what_for?: rgb(234, 255, 208); */
     --main-color: rgb(149, 225, 211);
-    --overlay-image: linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%); 
+    --overlay-image: linear-gradient( 90deg, rgb(252,227,138, 0.9) 0%, rgb(243,129,129, 0.9) 100%); 
 }
 
 *,
@@ -191,9 +191,6 @@ h3 {
     line-height: 18px;
 }
 
-
-
-
 .container_team-about {
     width: 1020px;
     margin: 0 auto;
@@ -211,6 +208,7 @@ h3 {
 
 .team-list {
     justify-content: space-between;
+    margin-bottom: 84px;
 }
 
 .team-list-item {
@@ -224,9 +222,13 @@ h3 {
 }
 
 .team-photo {
+    position: relative;
     margin-bottom: 30px;
 }
 
+.full_name {
+    margin-bottom: 16px;
+}
 .positions {
     font-size: 15px;
     font-weight: 300;
@@ -235,40 +237,80 @@ h3 {
     font-style: italic;
     line-height: 18px;
 }
-/* .facebook {
-    background-image: url(/images/social/facebook.png);
+
+.overlay {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--overlay-image);
+}
+
+.team-photo:hover > .overlay {
+    display: block;
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.icon {
+    position: absolute;
+    display: inline-block;    
+    width: 56px;
+    height: 56px;
+    margin: 1px;
+    background-color: var(--yellow);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon:hover,
+.icon:focus {
+    background-color: var(--main-color);
+}
+
+.facebook {
+    background-image: url(../images/social/facebook.png);
 }
 
 .twitter {
-    background-image: url(/images/social/twitter.png);
+    background-image: url(../images/social/twitter.png);
 }
 
 .pinterest {
-    background-image: url(/images/social/pinterest.png);
+    background-image: url(../images/social/pinterest.png);
 }
 
 .instagram {
-    background-image: url(/images/social/instagram.png);
-} */
+    background-image: url(../images/social/instagram.png);
+}
 
 /* FOOTER */
 
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
 }
 
-.footer::before {
+section:nth-last-child(1)::after {
+    content: "";
+    display: block;
     width: 1200px;
     height: 1px;
-    color: rgb(229, 229, 229);
+    background-color: rgb(229, 229, 229);
     margin-bottom: 27px;
 }
 
 .subscribe-form {
     display: flex;
     align-items: flex-end;
+    margin-bottom: 27px;
 }
 
 .subscribe-form_button {
