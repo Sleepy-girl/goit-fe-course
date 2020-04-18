@@ -76,24 +76,28 @@ h1 {
     line-height: 17px;
 }
 
-.nav-list-item-link:hover,
-.nav-list-item-link:focus {
-    color: var(--pink);
-}
-
 .nav-list-item-link::after {
-    display: none;
     content: "";
     display: block;
     margin-top: 10px;
     width: 100%;
     height: 3px;
     background-color: var(--pink);
-    visibility: hidden;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
+    color: var(--pink);
+    /* display: block; */
+    /* visibility: visible; */
 }
 
 .nav-list-item:hover > .nav-list-item-link { 
     display: block; }
+
+/* SECTIONS */
 
 .before-section-title {
     display: block;
@@ -360,7 +364,7 @@ section:nth-last-child(1)::after {
     padding-left: 13px;
 }
 
-.visually-hidden:not(:focus):not(:active),
+/* .visually-hidden:not(:focus):not(:active),
 input[type=“checkbox”].visually-hidden,
 input[type=“radio”].visually-hidden {
     position: absolute;
@@ -373,4 +377,4 @@ input[type=“radio”].visually-hidden {
     clip-path: inset(100%);
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
-}
+} */
