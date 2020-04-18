@@ -68,6 +68,10 @@ img {
     text-transform: uppercase;
 }
 
+.nav-list-item-link:hover {
+    color: rgb(254, 209, 54);
+}
+
 h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
@@ -142,6 +146,14 @@ h3 {
     text-align: center;
 }
 
+
+.background {
+    background-image: url(../images/Background.jpg);
+    height: 676px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .button-send {
     display: block;
     margin: 0 auto;
@@ -160,4 +172,7 @@ h3 {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
   }
-  
+
+.button-send:hover {
+    background-color: rgb(252, 220, 105);
+  }
