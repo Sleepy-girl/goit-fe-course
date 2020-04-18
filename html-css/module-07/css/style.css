@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo-link {
+    font-family: "Wisdom", cursive;
+    font-size: 26px;
+    line-height: 41px;
+    /* font-weight: normal; */
+    color: rgb(254, 209, 54);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list-item {
+    margin-right: 40px;
+}
+
+.nav-list-item:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.nav-list-item-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 41px;
+    font-weight: normal;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    line-height: 75px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+span {
+    display: block;
+    font-family: "DroidSerif";
+    font-size: 16px;
+    line-height: 1.2;
+ /* font-weight: ; */
+    color: rgb(119, 119, 119);
+    font-style: italic;
+    text-transform: initial;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list-item::before {
+    display: block;
+    content: "";
+    height: 74px;
+    width: 74px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+.icon-basket::before {
+    background-image: url(../images/icon/Icon-Basket.png);
+}
+.icon-laptop::before {
+    background-image: url(../images/icon/Icon-Laptop.png);
+}
+.icon-locked::before {
+    background-image: url(../images/icon/Icon-Locked.png);
+}
+
+.services-list-item {
+    width: 390px;
+    margin-right: 35px;    
+}
+
+.services-list-item:nth-last-child(1) {
+    margin-right: 0;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 4.167;
+    font-weight: bold;
+    color: rgb(34, 34, 34);  
+    text-align: center;  
+}
+
+.service-about {
+    display: block;
+    font-family: "RobotoSlab", serif;
+    font-size: 14px;
+    line-height: 1.2;
+ /* font-weight: normal; */
+    color: rgb(119, 119, 119);
+    text-align: center;
+}
+
+.button-send {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+
+    width: 240px;
+    height: 66px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  }
+  

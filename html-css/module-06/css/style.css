@@ -42,7 +42,7 @@ img {
 .main-nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
     margin: 19px 0 134px;
 }
 
