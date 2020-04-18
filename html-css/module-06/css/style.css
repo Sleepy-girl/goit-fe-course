@@ -233,7 +233,7 @@ h3 {
     margin-bottom: 30px;
 }
 
-.team-photo-item:hover {
+.team-photo:hover {
     position: relative;
     right: 10px;
     bottom: 10px;
