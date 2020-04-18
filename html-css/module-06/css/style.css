@@ -82,18 +82,15 @@ h1 {
     width: 100%;
     height: 3px;
     background-color: var(--pink);
-    /* display: none; */
-    /* visibility: hidden; */
+    display: none;
 }
 
 .nav-list-item-link:hover,
 .nav-list-item-link:focus {
     color: var(--pink);
-    /* display: block; */
-    /* visibility: visible; */
 }
 
-.nav-list-item:hover > .nav-list-item-link { 
+.nav-list-item:hover > .nav-list-item-link::after { 
     display: block; }
 
 /* SECTIONS */
@@ -270,6 +267,7 @@ h3 {
     background-color: var(--yellow);
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 .icon:hover,
