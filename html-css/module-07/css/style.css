@@ -148,10 +148,12 @@ h3 {
 
 
 .background {
-    background-image: url(../images/Background.jpg);
-    height: 676px;
-    background-position: center;
+    background-color: rgb(34, 34, 34);
+    background-image: url(../images/Background.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    min-height: 100vh;
 }
 
 .button-send {
