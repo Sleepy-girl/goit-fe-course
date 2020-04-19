@@ -43,7 +43,7 @@ img {
     font-family: "Wisdom", cursive;
     font-size: 26px;
     line-height: 41px;
-    /* font-weight: normal; */
+    font-weight: 400;
     color: rgb(254, 209, 54);
 }
 
@@ -63,7 +63,7 @@ img {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 41px;
-    font-weight: normal;
+    font-weight: 400;
     color: rgb(34, 34, 34);
     text-transform: uppercase;
 }
@@ -76,7 +76,7 @@ h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     line-height: 75px;
-    font-weight: bold;
+    font-weight: 700;
     color: rgb(34, 34, 34);
     text-transform: uppercase; 
     text-align: center;
@@ -86,8 +86,8 @@ span {
     display: block;
     font-family: "DroidSerif";
     font-size: 16px;
-    line-height: 1.2;
- /* font-weight: ; */
+    line-height: 19px;
+    font-weight: 400;
     color: rgb(119, 119, 119);
     font-style: italic;
     text-transform: initial;
@@ -131,7 +131,7 @@ h3 {
     font-family: "Montserrat";
     font-size: 18px;
     line-height: 4.167;
-    font-weight: bold;
+    font-weight: 700;
     color: rgb(34, 34, 34);  
     text-align: center;  
 }
@@ -140,25 +140,30 @@ h3 {
     display: block;
     font-family: "RobotoSlab", serif;
     font-size: 14px;
-    line-height: 1.2;
- /* font-weight: normal; */
+    line-height: 17px;
+    font-weight: 400;
     color: rgb(119, 119, 119);
     text-align: center;
 }
-
-
+.contact-sub-title {
+    margin-bottom: 76px;
+}
+.contact-title {
+    color: rgb(255, 255, 255);
+    margin: 18px 0 8px;
+}
 .background {
     background-color: rgb(34, 34, 34);
     background-image: url(../images/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: right 120px;
     min-height: 100vh;
 }
 
 .button-send {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 116px;
     cursor: pointer;
 
     width: 240px;
@@ -169,8 +174,8 @@ h3 {
 
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    line-height: 1.2;
-    font-weight: bold;
+    line-height: 22px;
+    font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
   }
