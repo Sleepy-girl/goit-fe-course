@@ -165,7 +165,7 @@ h2 {
     text-align: center;
     margin: 72px 0 36px;
 }
-
+ 
 .partners-photo {
     margin: 0 auto;
     /* height: 120px;
@@ -177,17 +177,27 @@ h2 {
 .partner-list-item::before {
     display: block;
     content: "";
-    height: 50px;
+    height: 40px;
     width: 40px;
-    /* background-color: rgb(255, 78, 80); */
     background-repeat: no-repeat;
     background-position: center;
+    transform: translate(130px, 130px);
 }
 
 .icon-tv::before {
     background-image: url(../images/icon/TV.png);
 }
-    
+.icon-cup::before {
+    background-image: url(../images/icon/cup.png);
+}  
+.icon-chemical::before {
+    background-image: url(../images/icon/chemical.png);
+}
+.icon-plane::before {
+    background-image: url(../images/icon/plane.png);
+}
+
+
 .partners-list {
     display: flex;
     justify-content: space-between;
