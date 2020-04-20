@@ -136,21 +136,20 @@ h1 {
 }
 
 .service-list li {
-    width: 300px;
-    
+    width: 380px;
 }
 
 .service-list-item {
-    margin-right: 20px;
-    margin-bottom: 94px;
+    padding-left: 62px;
     position: relative;
-    left: 45px;
+    margin-bottom: 94px;
 }
 
 .service-list-item::before {
-    display: block;
+    display: inline-block;
     position: absolute;
-    left: -62px;
+    left: 0;
+    top: 0;
     content: "";
     height: 32px;
     width: 32px;
@@ -265,7 +264,6 @@ h3 {
     background-color: var(--yellow);
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .icon:hover,
