@@ -316,8 +316,8 @@ section:nth-last-child(1)::after {
 .footer {
     display: flex;
     justify-content: space-between;
-    /* align-content: center; */
-    /* align-items: center; */
+    align-items: center;
+    margin-bottom: 26px;
 }
 
 .copyright {
@@ -336,7 +336,6 @@ section:nth-last-child(1)::after {
 
 .subscribe-form {
     display: flex;
-    margin-bottom: 26px;
     align-items: center;
 }
 
@@ -369,18 +368,3 @@ section:nth-last-child(1)::after {
     font-style: italic;
     padding-left: 13px;
 }
-
-/* .visually-hidden:not(:focus):not(:active),
-input[type=“checkbox”].visually-hidden,
-input[type=“radio”].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-} */
