@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title>Vygovska-Module-07</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap" rel="stylesheet"> -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -34,9 +33,8 @@
         </header>
         <main>
             <section class="services container">
-                <h2 class="services-title">services
-                    <span class="services-sub-title">Proin iaculis purus consequat sem cure.</span>
-                </h2>
+                <h2 class="services-title">services</h2>
+                <span class="services-sub-title">Proin iaculis purus consequat sem cure.</span>
                 <ul class="services-list">
                     <li class="services-list-item icon-basket">
                         <h3 class="services-list-item-title">E-Commerce</h3>
@@ -54,10 +52,21 @@
             </section>
             <div class="background">
                 <section class="contact container">
-                    <h2 class="contact-title">contact us
-                        <span class="contact-sub-title">Proin iaculis purus consequat sem cure.</span>
-                    </h2>
-                    <button class="button-send">send message</button>
+                    <h2 class="contact-title">contact us</h2>
+                    <span class="contact-sub-title">Proin iaculis purus consequat sem cure.</span>
+                    <form action="#" class="contact-form">
+                        <div class="wrapper-contact-form">
+                            <div class="wrapper-contact-form-input">
+                                <input type="text" name="user-name" class="contact-form-input" placeholder="your Name *" required minlength="2">
+                                <input type="email" name="user-email" class="contact-form-input" placeholder="your e-mail *" required minlength="2">
+                                <input type="text" name="subject" class="contact-form-input" placeholder="subject">
+                            </div>
+                            <div class="wrapper-message">
+                             <textarea name="message" class="message" placeholder="your message *" required minlength="6" maxlength="160"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="button-send">send message</button>
+                    </form>
                 </section>
             </div>
         </main>

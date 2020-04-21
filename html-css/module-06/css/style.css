@@ -362,7 +362,6 @@ section:nth-last-child(1)::after {
     line-height:18px;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
-    /* color: rgb(204, 204, 204); */
     font-style: italic;
     padding-left: 13px;
 }
