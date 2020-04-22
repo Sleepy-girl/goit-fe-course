@@ -65,7 +65,7 @@ img {
 .container {
     width: 320px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 10px;
 }
 
 .background {
@@ -73,13 +73,13 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    min-height: 100vh;
+    width: 100vw;
+    /* min-height: 100vh; */
 }
 
 .login-list {
     display: flex;
-    /* transform: translateX(-8px); */
+    justify-content: center;
     margin-bottom: 116px;
 }
 .login_link, .signup_link {
@@ -99,6 +99,7 @@ img {
 .signup_link:focus, .signup_link:hover {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 17px;
+    outline: none;
 }
 .logo-link-mb, .logo-link {
     font-family: "Montserrat", sans-serif;
@@ -108,13 +109,19 @@ img {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
-.logo-link-mb {
+.logo {
+    text-align: center;
     margin-bottom: 34px;
 }
 .logo-link {
     display: none;
 }
-
+.share {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
 .share-title, .share-title-second-row {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
@@ -122,18 +129,23 @@ img {
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    text-align: center;
 }
-.share-sub-title {
+.share-title {
+    margin-bottom: 20px;
+}
+.share-sub-title, .share-sub-title-second-row {
+    display: block;
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     line-height: 1.2;
     font-weight: 300;
     color: rgb(255, 255, 255);
     text-transform: initial;
-    display: block;
-    margin: 0 auto 36px;
 }
+.share-sub-title {
+    margin: 0 auto 18px;
+}
+
 .find-partner {
     display: block;
     font-family: "Montserrat", sans-serif;
@@ -149,6 +161,7 @@ img {
     margin: 0 auto;
     cursor: pointer;
     transition: background-color 0.7s linear;
+    margin-bottom: 138px;
 }
   
 .find-partner:focus, .find-partner:hover {
@@ -156,13 +169,15 @@ img {
     color: rgb(255, 78, 80);
     border: 1px solid rgb(255, 78, 80);
 }
+
 .meet-title {
     font-family: "Montserrat", sans-serif;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 1.2;
     font-weight: 700;
     color: rgb(51, 51, 51);  
     text-align: center;
+    margin-bottom: 72px;
 } 
 
 .partners-photo {
@@ -218,23 +233,20 @@ img {
 }
 
 .other-partners {
+    display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 17px;
     font-weight: 700;
     color: rgb(255, 78, 80);
-    
     width: 192px;
     height: 40px;
     border: 1px solid rgb(255, 78, 80);
     background-color: rgba(255, 255, 255, 0);
     border-radius: 20px;
-
-    display: block;
     margin: 0 auto;
     cursor: pointer;
     /* margin-bottom: 74px; */
-
     transition: all 0.7s linear;
 }
 
@@ -283,7 +295,7 @@ img {
     margin-bottom: 40px;
 }
 .share-sub-title {
-    margin: 0 auto 36px;
+    margin-bottom: 36px;
 }
 .meet-title {
     margin: 72px 0 36px;
