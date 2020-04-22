@@ -168,6 +168,7 @@ img {
     background-color: rgb(255, 255, 255);
     color: rgb(255, 78, 80);
     border: 1px solid rgb(255, 78, 80);
+    outline: none;
 }
 
 .meet-title {
@@ -177,15 +178,27 @@ img {
     font-weight: 700;
     color: rgb(51, 51, 51);  
     text-align: center;
-    margin-bottom: 72px;
+    padding-top: 72px;
+    margin-bottom: 18px;
 } 
+.partners-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partner-list-item {
+    width: 220px;
+    text-align: center;
+    margin-bottom: 28px;
+}
 
 .partners-photo {
     margin: 0 auto;
     height: 121px;
     width: 121px; 
-    border-radius: 60px;
-    margin-bottom:  ;
+    border-radius: 50%;
+    margin-bottom: 22px;
 }
 .partner-list-item::before {
     display: block;
@@ -209,11 +222,6 @@ img {
     background-image: url(../images/icon/plane.png);
 }
 
-.partner-list-item {
-    width: 220px;
-    text-align: center;
-}
-
 .partners-name {
     font-family: "Montserrat". sans-serif;
     font-size: 14px;
@@ -221,7 +229,7 @@ img {
     font-weight: 700;
     color: rgb(51, 51, 51);
     text-align: center;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 .partners-about {
@@ -246,77 +254,106 @@ img {
     border-radius: 20px;
     margin: 0 auto;
     cursor: pointer;
-    /* margin-bottom: 74px; */
+    margin-bottom: 26px;
     transition: all 0.7s linear;
 }
 
-.other-partners:hover {
+..other-partners:focus, .other-partners:hover {
     border: 1px solid rgb(251, 215, 134);
+    outline: none;
 } 
 
-/* .container {
-    width: 940px;
-    margin: 0 auto;
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 38px 10px 0;
+    }
+    .background {
+        background-image: url(../images/tablet/background-tablet.jpg);
+        /* min-height: 100vh; */
+    }
+    .logo-link-mb {
+        display: none;
+    } 
+
+    .logo-link {
+        display: block;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        justify-items: center;
+        margin-bottom: 154px;
+    }
+    .share-title, .share-title-second-row {
+        display: block;
+        font-size: 52px;
+    }
+    .share-sub-title {
+        display: flex;
+        padding: 40px 150px 36px;
+    }
+
+    .find-partner {
+        margin-bottom: 234px;
+    }
+    
+    .meet-title {
+    padding-top: 74px;
+    margin-bottom: 34px;
+    }
+    .wrapper-partner-list {
+        display: flex;
+        justify-content: center;
+    }
+    .partners-list {
+        width: 492px;
+        justify-content: space-between;
+    }
+    .partner-list-item {
+        margin-bottom: 58px;
+    }
+
+    .other-partners {
+        margin-bottom: 40px;
+    }
+
 }
 
-.background {
-    background-image: url(../images/background.png);
-}
+@media (min-width: 1024px) {
+    .container {
+        width: 940px;
+        margin: 0 auto;
+        padding: 0;
+    }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 154px;
-}
-.logo {
-    margin-top: 50px;
-}
+    .background {
+        background-image: url(../images/desktop/background.jpg);
+    }
 
-.logo-link {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-}
+    .login-list {
+        margin-bottom: 148px;
+    }
 
-.login-list {
-    display: flex;
-    margin-top: 50px;
-    align-items: center;
-}
+    .share-sub-title {
+        padding: 40px 240px 36px;
+    }
 
-.share-title {
-    margin-bottom: 14px;
-}  
-.share-title-second-row {
-    margin-bottom: 40px;
+    .partners-list {
+        width: 940px;
+    } 
+    .partner-list-item {
+        margin: 0 20px 38px 0;
+    }
+    .partner-list-item:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    .other-partners {
+        margin-bottom: 74px;
+    }
+
 }
-.share-sub-title {
-    margin-bottom: 36px;
-}
-.meet-title {
-    margin: 72px 0 36px;
-}
-.partners-photo {
-    margin-bottom: 22px;
-}
-.partners-list {
-    display: flex;
-    justify-content: space-between;
-}
-.partner-list-item {
-    margin: 0 20px 38px 0;
-}
-.partner-list-item:nth-last-child(1) {
-    margin-right: 0;
-}
-.partners-name {
-    margin-bottom: 20px;
-}
-.other-partners {
-    cursor: pointer;
-    margin-bottom: 74px;
-} */
