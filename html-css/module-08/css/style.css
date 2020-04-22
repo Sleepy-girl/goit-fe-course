@@ -152,7 +152,9 @@ img {
 }
   
 .find-partner:focus, .find-partner:hover {
-    background-color: rgb(247, 117, 119);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 78, 80);
+    border: 1px solid rgb(255, 78, 80);
 }
 .meet-title {
     font-family: "Montserrat", sans-serif;
