@@ -250,7 +250,7 @@ img {
     width: 192px;
     height: 40px;
     border: 1px solid rgb(255, 78, 80);
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent;
     border-radius: 20px;
     margin: 0 auto;
     cursor: pointer;
@@ -258,9 +258,11 @@ img {
     transition: all 0.7s linear;
 }
 
-..other-partners:focus, .other-partners:hover {
-    border: 1px solid rgb(251, 215, 134);
+.other-partners:focus, .other-partners:hover {
+    border: none;
     outline: none;
+    background-color: rgb(255, 78, 80);
+    color: rgb(255, 255, 255);
 } 
 
 
@@ -327,7 +329,7 @@ img {
     .container {
         width: 940px;
         margin: 0 auto;
-        padding: 0;
+        padding: 38px 0 0;
     }
 
     .background {
