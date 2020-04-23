@@ -322,7 +322,12 @@ img {
         display: flex;
         padding: 40px 150px 36px;
     }
-
+    .icon-chemical {
+        order: -1;
+    }
+    .icon-tv {
+        order: -2;
+    }
     .find-partner {
         margin-bottom: 234px;
     }
