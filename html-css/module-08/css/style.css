@@ -150,16 +150,16 @@ img {
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 40px;
     font-weight: 700;
     color: rgb(255, 255, 255);
     width: 225px;
     height: 40px;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 20px;
     background-color: rgb(255, 78, 80);
+    text-align: center;
     margin: 0 auto;
-    cursor: pointer;
     transition: background-color 0.7s linear;
     margin-bottom: 138px;
 }
@@ -244,7 +244,7 @@ img {
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 40px;
     font-weight: 700;
     color: rgb(255, 78, 80);
     width: 192px;
@@ -252,14 +252,14 @@ img {
     border: 1px solid rgb(255, 78, 80);
     background-color: transparent;
     border-radius: 20px;
+    text-align: center;
     margin: 0 auto;
-    cursor: pointer;
     margin-bottom: 26px;
     transition: all 0.7s linear;
 }
 
 .other-partners:focus, .other-partners:hover {
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     background-color: rgb(255, 78, 80);
     color: rgb(255, 255, 255);
