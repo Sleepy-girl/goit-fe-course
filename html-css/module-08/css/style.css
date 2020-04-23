@@ -96,6 +96,8 @@ img {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 17px;
     outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает подсветку при нажатии*/
+
 }
 .logo-link-mb, .logo-link {
     font-family: "Montserrat", sans-serif;
@@ -165,6 +167,7 @@ img {
     color: rgb(255, 78, 80);
     border: 1px solid rgb(255, 78, 80);
     outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает подсветку при нажатии*/
 }
 
 .meet-title {
@@ -279,6 +282,7 @@ img {
     outline: none;
     background-color: rgb(255, 78, 80);
     color: rgb(255, 255, 255);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает подсветку при нажатии*/
 } 
 
 
@@ -298,7 +302,7 @@ img {
     .logo-link {
         display: block;
     }
-    
+
     .login-list {
         margin-bottom: 0;
     }
