@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.background {
+    background-image: url(../images/mb/background_mb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+.login-list {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    margin-bottom: 116px;
+}
+.login-list-item {
+    display: inline-block;
+}
+.login_link, .signup_link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: transparent;
+    width: 90px;
+    height: 36px;
+    cursor: pointer;
+    transition: color 0.5s linear;
+}
+.login_link:focus, .login_link:hover, 
+.signup_link:focus, .signup_link:hover {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 17px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает подсветку при нажатии*/
+}
+.logo-link-mb, .logo-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 34px;
+}
+.logo-link {
+    display: none;
+}
+
+.share {
+    text-align: center;
+}
+.share-title, .share-title-second-row {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.1px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.share-title {
+    margin-bottom: 20px;
+}
+.share-sub-title, .share-sub-title-second-row {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-transform: initial;
+}
+.share-sub-title {
+    margin: 0 auto 18px;
+}
+
+.find-partner {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    width: 225px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    /* text-align: center; */
+    margin: 0 auto;
+    transition: background-color 0.7s linear;
+    margin-bottom: 138px;
+}
+  
+.find-partner:focus, .find-partner:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 78, 80);
+    border: 1px solid rgb(255, 78, 80);
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает подсветку при нажатии*/
+}
+
+.meet-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgb(51, 51, 51);  
+    text-align: center;
+    padding-top: 72px;
+    margin-bottom: 18px;
+} 
+
+.partner-list-item {
+    width: 220px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.partners-photo {
+    margin: 0 auto;
+    height: 121px;
+    width: 121px; 
+    border-radius: 50%;
+    margin-bottom: 22px;
+}
+.partner-list-item::before {
+    display: block;
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(130px, 130px);
+}
+.icon-tv::before {
+    background-image: url(../images/icon/icon-tv.png);
+    background-color: rgb(255, 78, 80);
+    width: 41px;
+    height: 41px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.icon-cup::before {
+    background-image: url(../images/icon/icon-cup.png);
+    background-color: rgb(28, 215, 173);
+    width: 41px;
+    height: 41px;
+    border: 4px solid white;
+    border-radius: 50%;
+}  
+.icon-chemical::before {
+    background-image: url(../images/icon/icon-chemical.png);
+    background-color: rgb(255, 165, 7);
+    width: 41px;
+    height: 41px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.icon-plane::before {
+    background-image: url(../images/icon/icon-plane.png);
+    background-color: rgb(78, 115, 219);
+    width: 41px;
+    height: 41px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.partners-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partners-about {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+}
+
+.other-partners {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    color: rgb(255, 78, 80);
+    max-width: 192px;
+    border: 1px solid rgb(255, 78, 80);
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    transition: all 0.7s linear;
+}
+
+.other-partners:focus, .other-partners:hover {
+    border: 1px solid transparent;
+    outline: none;
+    background-color: rgb(255, 78, 80);
+    color: rgb(255, 255, 255);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает подсветку при нажатии*/
+} 
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+        padding: 38px 10px 0;
+    }
+    .background {
+        background-image: url(../images/tablet/background-tablet.jpg);
+    }
+    .logo-link-mb {
+        display: none;
+    } 
+    .logo-link {
+        display: block;
+    }
+    .login-list {
+        margin-bottom: 0;
+    }
+    .logo {
+        margin-bottom: 0;
+    }
+    .navigation {
+        margin-bottom: 154px;
+    }
+    .share-title, .share-title-second-row {
+        display: block;
+        font-size: 52px;
+    }
+    .share-sub-title {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0 36px;
+    }
+    .icon-chemical {
+        order: -1;
+    }
+    .icon-tv {
+        order: -2;
+    }
+    .find-partner {
+        margin-bottom: 234px;
+    }
+    .meet-title {
+        padding-top: 74px;
+        margin-bottom: 34px;
+    }
+    .partners-list {
+        width: 532px; 
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .partner-list-item {
+        margin-bottom: 58px;
+    }
+    .other-partners {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 940px;
+        padding: 38px 0 0;
+    }
+
+    .background {
+        background-image: url(../images/desktop/background.jpg);
+    }
+
+    .share-sub-title {
+        padding: 40px 240px 36px;
+    }
+
+    .partners-list {
+        width: 940px;
+    } 
+    .partner-list-item {
+        margin-bottom: 38px;
+    }
+    .partner-list-item:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    .other-partners {
+        margin-bottom: 74px;
+    }
+
+}
