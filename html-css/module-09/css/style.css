@@ -310,9 +310,7 @@ img {
         justify-content: center;
         padding: 40px 0 36px;
     }
-    .icon-chemical {
-        order: -1;
-    }
+    
     .icon-tv {
         order: -2;
     }
