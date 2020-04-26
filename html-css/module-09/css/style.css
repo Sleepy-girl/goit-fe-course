@@ -72,8 +72,6 @@ img {
     width: 100vw;
 }
 .login-list {
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     margin-bottom: 116px;
 }
@@ -310,7 +308,6 @@ img {
         justify-content: center;
         padding: 40px 0 36px;
     }
-    
     .icon-tv {
         order: -2;
     }
@@ -335,21 +332,17 @@ img {
 
 }
 
-@media (min-width: 1024px) {
-
+@media (min-width: 992px) {
     .container {
         width: 940px;
         padding: 38px 0 0;
     }
-
     .background {
         background-image: url(../images/desktop/background.jpg);
     }
-
     .share-sub-title {
-        padding: 40px 240px 36px;
+        padding: 40px 220px 36px;
     }
-
     .partners-list {
         width: 940px;
     } 
@@ -359,9 +352,7 @@ img {
     .partner-list-item:nth-last-child(1) {
         margin-right: 0;
     }
-
     .other-partners {
         margin-bottom: 74px;
     }
-
 }
