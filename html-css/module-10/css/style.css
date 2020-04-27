@@ -124,11 +124,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 182px;
 }
 
-.logotype {
-    margin: 0;
-    font-size: 0;
-}
-
 .logotype-link {
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -171,13 +166,17 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--yellow);
 }
 
-.navigation__list-item:hover > .navigation__list-item-link::after { 
+.navigation__list-item:hover > .navigation__list-item-link::after {
     background-color: var(--yellow);
 }
 .navigation__icon-svg {
     width: 20px;
     height: 20px;
     fill: var(--white)
+}
+.navigation__icon-svg:hover,
+.navigation__icon-svg:focus {
+    fill: var(--yellow)
 }
 
 .navigation__list-item-btn {
