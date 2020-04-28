@@ -1,0 +1,30 @@
+.section__subtitle {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: initial;
+    color: rgb(51, 51, 51);
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.section__title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 36px;
+  text-align: center;
+}
+
+.section__title::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: $title-line-color;
+    margin: 39px auto 64px;
+}

@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-.header__background {
+.background-header {
     background-image: -webkit-gradient( linear, left bottom, left top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))),
     url(../images/background-vulture.jpg);
     background-image: -o-linear-gradient( bottom, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%),
@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation__list-item:hover > .navigation__list-item-link::after {
     background-color: var(--yellow);
 }
+
 .navigation__icon-svg {
     width: 20px;
     height: 20px;
@@ -203,9 +204,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 110px;
 } 
+
 .main-subtitle-br {
     display: block;
 }  
+
 .header__learn-more {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -219,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 160px;
     height: 40px;
 }
+
 .header__learn-more-link {
     font-size: 14px;
     font-family: "Montserrat";
@@ -227,6 +231,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     line-height: 34px;
 }
+
 .header__learn-more:hover,
 .header__learn-more:focus {
     background-color: var(--yellow);
@@ -282,6 +287,7 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+
 .service__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
