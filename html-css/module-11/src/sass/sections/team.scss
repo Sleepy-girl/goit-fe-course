@@ -7,64 +7,61 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 84px;
+
+    &-item {
+        width: 380px;
+        margin-right: 30px;
+        text-align: center;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        
+        &-photo {
+            position: relative;
+            margin-bottom: 30px;
+            transition: all 1s linear;
+        }
+         
+        &-photo:hover {
+            transform: translate(-10px, -10px);
+            box-shadow: 10px 10px 0 0 $shadow-color;
+        }
+        
+        &-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: $overlay-photo;
+        }
+        
+        &-photo:hover >
+        &-overlay {
+            display: block;
+        }
+        
+        &-social {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: fit-content;
+        }
+    }
 }
 
 .team__deskription {
     font-size: 15px;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
+    font-family: $deskription;
     color: rgb(153, 153, 153);
     line-height: 24px;
     text-align: center;
     margin-bottom: 90px;
-}
-
-.team__list {
-    justify-content: space-between;
-    margin-bottom: 84px;
-}
-
-.team__list-item {
-    width: 380px;
-    margin-right: 30px;
-    text-align: center;
-}
-
-.team__list-item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.team__list-item-photo {
-    position: relative;
-    margin-bottom: 30px;
-    transition: all 1s linear;
-}
- 
-.team__list-item-photo:hover {
-    transform: translate(-10px, -10px);
-    box-shadow: 10px 10px 0 0 $shadow-color;
-}
-
-.team__list-item-overlay {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: $overlay-photo;
-}
-
-.team__list-item-photo:hover > .team__list-item-overlay {
-    display: block;
-}
-
-.team__list-item-social {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: fit-content;
 }
 
 .icon {
@@ -76,18 +73,18 @@
     background-color: $hover-color;
     background-repeat: no-repeat;
     background-position: center;
+
+    &:hover,
+    &:focus {
+        fill: $main-color;
+        background-color: $title-line-color;
+    }
 }
 .team__list-item-social-icon {
     height: 100%;
     width: 100%;
     padding: 15px;
 }
-.icon:hover,
-.icon:focus {
-    fill: $main-color;
-    background-color: $title-line-color;
-}
-
 
 .full_name {
     margin-bottom: 16px;
@@ -96,7 +93,7 @@
 .positions {
     font-size: 15px;
     font-weight: 300;
-    font-family: "Roboto", sans-serif;
+    font-family: $deskription;
     color: rgb(153, 153, 153);
     font-style: italic;
     line-height: 18px;

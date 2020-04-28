@@ -8,10 +8,19 @@
 }
 
 @media (min-resolution: 192dpi) {
-    .header__background {
+    .background-header {
         background-image: $overlay-background,
         url(../images/background-vulture@2x.jpg);
     }
+}
+
+.logotype-link {
+    font-size: 30px;
+    font-family: $main-font;
+    color: $main-color;
+    font-weight: 700;
+    text-transform: initial;
+    line-height: 36px;
 }
 
 .navigation {
@@ -20,88 +29,81 @@
     align-items: baseline;
     padding-top: 19px;
     margin-bottom: 182px;
-}
 
-.logotype-link {
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    color: $main-color;
-    font-weight: 700;
-    text-transform: initial;
-    line-height: 36px;
-}
+    &__list {
+        display: flex;
+        width: 490px;
+        justify-content: space-between;
+        justify-items: center;
+    
+        &-item-link {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $main-font;
+            color: $main-color;
+            text-transform: uppercase;
+            line-height: 17px;
+        }
 
-.navigation__list {
-    display: flex;
-    width: 490px;
-    justify-content: space-between;
-    justify-items: center;
-}
+        &-item-link::after {
+            content: "";
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+            height: 3px;
+        }
 
-.navigation__list-item-link {
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    color: $main-color;
-    text-transform: uppercase;
-    line-height: 17px;
-}
+        &-item-link:hover,
+        &-item-link:focus {
+            color: $hover-color;
+        }
 
-.navigation__list-item-link::after {
-    content: "";
-    display: block;
-    margin-top: 10px;
-    width: 100%;
-    height: 3px;
-}
+        &-item-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
 
-.navigation__list-item-link:hover,
-.navigation__list-item-link:focus {
-    color: $hover-color;
-}
+        &-item:hover >
+        &-item-link::after {
+            background-color: $hover-color;
+        }
+    }    
 
-.navigation__list-item:hover > .navigation__list-item-link::after {
-    background-color: $hover-color;
-}
+    &__icon-svg {
+        width: 20px;
+        height: 20px;
+        fill: $main-color
+    }
 
-.navigation__icon-svg {
-    width: 20px;
-    height: 20px;
-    fill: $main-color
-}
-.navigation__icon-svg:hover,
-.navigation__icon-svg:focus {
-    fill: $hover-color
-}
-
-.navigation__list-item-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    &__icon-svg:hover,
+    &__icon-svg:focus {
+        fill: $hover-color
+    }
 }
 
 .main-subtitle {
     font-size: 72px;
-    font-family: "Kaushan Script";
+    font-family: $main-subtitle-font;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     text-transform: initial; 
     margin-bottom: 42px;
+
+    &-br {
+        display: block;
+    }
 }
- 
+
 .main-title {
     font-size: 150px;
-    font-family: "Montserrat", sans-serif;
+    font-family: $main-font;
     color: $main-color;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 110px;
-} 
-
-.main-subtitle-br {
-    display: block;
-}  
+}
 
 .header__learn-more {
     display: flex;
@@ -111,20 +113,25 @@
     border: 3px solid $main-color;
     width: 160px;
     height: 40px;
-}
 
-.header__learn-more-link {
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 34px;
-}
+    &-link {
+        font-size: 14px;
+        font-family: $main-font;
+        color: $main-color;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 34px;
+    }
 
-.header__learn-more:hover,
-.header__learn-more:focus {
-    background-color: $hover-color;
-    border: 3px solid $main-color;
-    color: $main-color;
+    &:hover {
+        background-color: $hover-color;
+        border: 3px solid $main-color;
+        color: $main-color;
+    }
+
+    &:focus {
+        background-color: $hover-color;
+        border: 3px solid $main-color;
+        color: $main-color;
+    }
 }
