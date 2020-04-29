@@ -1,0 +1,24 @@
+@mixin bgi($bgr, $bgp, $bgs) {
+    background-repeat: $bgr;
+    background-position: $bgp;
+    background-size: $bgs;
+}
+
+@mixin font($ff, $fs, $fw: 400, $lh: 1.2) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+@mixin btn($w, $h, $b, $bgc, $c, $ff, $fs, $fw: 400, $lh: 1.2) {
+    width: $w;
+    height: $h;
+    border: $b;
+    background-color: $bgc;
+    color: $c;
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}

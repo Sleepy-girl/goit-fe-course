@@ -55,11 +55,8 @@
 }
 
 .team__deskription {
-    font-size: 15px;
-    font-weight: 400;
-    font-family: $deskription;
+    @include font($deskription, 15px, 400, 24px);
     color: rgb(153, 153, 153);
-    line-height: 24px;
     text-align: center;
     margin-bottom: 90px;
 }
@@ -91,12 +88,9 @@
 }
 
 .positions {
-    font-size: 15px;
-    font-weight: 300;
-    font-family: $deskription;
+    @include font($deskription, 15px, 300);
     color: rgb(153, 153, 153);
     font-style: italic;
-    line-height: 18px;
 }
 
 section:nth-last-child(1)::after {

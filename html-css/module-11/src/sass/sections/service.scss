@@ -31,11 +31,8 @@
     }
 
     &__deskription {
-        font-size: 15px;
-        font-weight: 400;
-        font-family: $deskription;
+        @include font($deskription, 15px);
         color: rgb(153, 153, 153);
-        line-height: 18px;
     }
 }
 
@@ -59,11 +56,8 @@
 }
 
 h3 {
-    font-size: 14px;
-    font-weight: 400;
-    font-family: $main-font;
+    @include font($main-font, 14px);
     color: rgb(51, 51, 51);
     text-transform: uppercase;
-    line-height: 17px;
     margin-bottom: 8px;
 }
